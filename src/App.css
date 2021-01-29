@@ -1,38 +1,132 @@
+/****************
+Typography
+*****************/
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+.App {
+  font-family: 'Josefin Sans', cursive;
+  color: rgb(24, 24, 24);
+}
+
+/****************
+Layout
+*****************/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding-bottom:60px;
 }
 
-.App-link {
-  color: #61dafb;
+/****************
+HEADER
+*****************/
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid grey;
+  padding: 25px 10px 10px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.brand-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: .5rem;
+}
+.sub-title {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .sub-title {
+    display: none;
+    width: 100%
   }
 }
+
+
+/****************
+Section: title with Carousel
+*****************/
+.section-container {
+  max-width: 80%;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-top: 3em;
+  text-align: left;
+}
+
+#section-title {
+  font-size: 1.3rem;
+}
+
+button {
+  background-color: white;
+  color:rgb(197, 194, 194);
+  border: 1px solid #e7e7e7;
+  outline: none;
+  border-radius: 4px;
+}
+button:hover {
+  background-color:  rgb(218, 215, 215);
+}
+
+/****************
+Card 
+*****************/
+.fullCard {
+  box-sizing: border-box;
+  max-width: 30vw;
+  border: 1px solid rgb(218, 215, 215);
+  border-radius:8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  text-align: center;
+  height: 210px;
+}
+
+.cardImage {
+  align-self: center;
+  max-width: 100%;
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.myBlurHash {
+  width: 101%;
+  min-width: 101%;
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.restaurant-name {
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 0.7rem;
+}
+.card-text {
+  margin-block-start: auto;
+}
+.offline {
+  color: rgba(63, 62, 62, 0.7);
+  font-size: 0.7rem;
+  font-style: italic;
+}
+
+.online {
+  font-size: 0.7rem;
+}
+
