@@ -2,7 +2,6 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import { Blurhash } from "react-blurhash";
 
-
 const SingleCard = ({ restaurant }) => {
     return (
         <Card className="fullCard">
